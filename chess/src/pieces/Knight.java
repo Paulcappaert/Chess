@@ -50,6 +50,8 @@ public class Knight extends Piece {
 			pieceType = Display.WKNIGHT;
 		else
 			pieceType = Display.BKNIGHT;
+		
+		value = 3;
 	}
 
 }

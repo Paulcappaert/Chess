@@ -68,6 +68,22 @@ public class Game {
 		}
 		
 	}
+	/**
+	 * gets the value of the white material - black material
+	 * returns 100 if black is in checkmate
+	 * returns -100 if white is in checkmate
+	 * @return
+	 */
+	public int value() {
+		int val = 0;
+		for(Piece p : pieces) {
+			if(p.getColor() == Piece.WHITE)
+				val += p.getValue();
+			else
+				val -= p.getValue();
+		}
+		return val;
+	}
 	
 	/**
 	 * undoes the last move, if there is a last move
@@ -90,6 +106,16 @@ public class Game {
 			whiteTurn = !whiteTurn;
 			currMove++;
 		}
+	}
+	
+	/**
+	 * gets all of the possible moves for one color
+	 * @param color
+	 * @return
+	 */
+	public ArrayList<Move> getPossibleMoves(int color) {
+		//Todo
+		return null;
 	}
 
 	/** 
@@ -345,6 +371,24 @@ public class Game {
 			else
 				return true;
 		}
+	}
+	
+	/**
+	 * determines the current state of the game
+	 * 0 - no current winner
+	 * 1 - white wins
+	 * 2 - black wins
+	 * 3 - draw
+	 * @return int
+	 */
+	public int winner() {
+		int status = 0;
+		if(whiteTurn && wKing.underThreat(threatMap)) {
+			
+		} else if(!whiteTurn && bKing.underThreat(threatMap)) {
+			
+		}
+		return status;
 	}
 	
 	/**

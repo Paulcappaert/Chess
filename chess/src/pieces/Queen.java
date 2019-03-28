@@ -41,6 +41,8 @@ public class Queen extends Piece {
 			pieceType = Display.WQUEEN;
 		else
 			pieceType = Display.BQUEEN;
+		
+		value = 9;
 	}
 
 }

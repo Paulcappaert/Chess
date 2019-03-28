@@ -29,6 +29,8 @@ public class Rook extends Piece {
 			pieceType = Display.WROOK;
 		else
 			pieceType = Display.BROOK;
+		
+		value = 5;
 	}
 
 }

@@ -29,6 +29,8 @@ public class Bishop extends Piece {
 			pieceType = Display.WBISHOP;
 		else
 			pieceType = Display.BBISHOP;
+		
+		value = 3;
 	}
 
 }

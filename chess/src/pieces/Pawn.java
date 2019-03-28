@@ -44,6 +44,8 @@ public class Pawn extends Piece {
 		} else {
 			pieceType = Display.BPAWN;
 		}	
+		
+		value = 1;
 	}
 	
 	public ArrayList<Position> getPossibleMoves(BoardMap posMap) {

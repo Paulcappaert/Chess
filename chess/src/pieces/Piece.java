@@ -21,6 +21,7 @@ public abstract class Piece {
 	protected ArrayList<Position[]> moves;
 	private ArrayList<Position> history;
 	private int currMove;
+	protected int value;
 	
 	public Piece(int x, int y, int color) {
 		this.color = color;
@@ -128,5 +129,15 @@ public abstract class Piece {
 	public void setMoved(boolean hasMoved) {
 		this.hasMoved = hasMoved;
 	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
+	
+	
 
 }

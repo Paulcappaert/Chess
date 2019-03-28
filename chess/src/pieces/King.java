@@ -55,6 +55,7 @@ public class King extends Piece {
 			pieceType = Display.BKING;
 		
 		canCastle = true;
+		value = 0;
 	}
 
 	public boolean underThreat(BoardMap threatMap) {
